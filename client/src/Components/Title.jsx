@@ -1,6 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { Link } from "react-router-dom";
-
+import resume from "../assets/_Resume Of Ahammad Abdullah.pdf";
 const Title = () => {
   return (
     <div className="text-white min-h-screen lg:min-h-0 flex flex-col justify-center">
@@ -24,9 +23,17 @@ const Title = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <FaLinkedin /> <h3 className="pl-3">/ahammadabdullah</h3>
+            <FaLinkedin /> <h3 className="pl-3">/ahammad-abdullah</h3>
           </a>
         </div>
+      </div>
+      {/* download resume button  */}
+      <div>
+        <a href={resume} download={"resume_ahammadabdullah"}>
+          <button className="py-2 px-3 bg-highlight rounded mt-5 hover:bg-secondary">
+            Resume
+          </button>
+        </a>
       </div>
     </div>
   );

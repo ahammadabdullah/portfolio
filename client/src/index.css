@@ -16,6 +16,9 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background-color: transparent;
+    /* background-color: #fff;
+    height: 40px;
+    border-radius: 12px; */
 }
  
 /* Handle on hover */
