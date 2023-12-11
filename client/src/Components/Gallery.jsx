@@ -10,7 +10,7 @@ const Gallery = () => {
         {" "}
         Projects
       </h3>
-      <div className="bg-primary h-fit w-[400px] text-secondary  mx-auto rounded-lg border-secondary border-[1px] ">
+      <div className="bg-primary h-fit w-[350px] text-secondary  mx-auto rounded-lg border-secondary border-[1px] ">
         <img
           className=" rounded-t-lg "
           src={
@@ -19,7 +19,7 @@ const Gallery = () => {
           alt=""
         />
         <div className="p-4 border-t-[1px] border-secondary">
-          <h3 className="">
+          <h3 className="text-sm">
             Empowered educators and engaged students through Edumi, a dynamic
             online learning platform built with MERN
           </h3>
@@ -51,7 +51,7 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-      <div className="bg-primary h-fit text-secondary w-[400px] mx-auto rounded-lg border-secondary border-[1px] ">
+      <div className="bg-primary h-fit text-secondary w-[350px] mx-auto rounded-lg border-secondary border-[1px] ">
         <img
           className=" rounded-t-lg "
           src={
@@ -60,7 +60,7 @@ const Gallery = () => {
           alt=""
         />
         <div className="p-4 border-t-[1px] border-secondary">
-          <h3 className="">
+          <h3 className="text-sm">
             Empowered educators and engaged students through Edumi, a dynamic
             online learning platform built with MERN
           </h3>
@@ -92,7 +92,7 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-      <div className="bg-primary h-fit w-[400px] text-secondary  mx-auto rounded-lg border-secondary border-[1px] ">
+      <div className="bg-primary h-fit w-[350px] text-secondary  mx-auto rounded-lg border-secondary border-[1px] ">
         <img
           className=" rounded-t-lg "
           src={
@@ -101,7 +101,7 @@ const Gallery = () => {
           alt=""
         />
         <div className="p-4 border-t-[1px] border-secondary">
-          <h3 className="">
+          <h3 className="text-sm">
             Empowered educators and engaged students through Edumi, a dynamic
             online learning platform built with MERN
           </h3>

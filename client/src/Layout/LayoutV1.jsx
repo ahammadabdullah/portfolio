@@ -8,7 +8,7 @@ const LayoutV1 = () => {
     <div className="bg-primary">
       <Toaster />
       <div className="max-w-7xl mx-auto flex lg:flex-row flex-col  justify-between items-center">
-        <div className="z-30 w-full h-full flex-1 flex justify-center lg:pl-10">
+        <div className="z-30 w-full h-full flex-1 flex justify-center lg:pl-20 xl:pl-10">
           <Navbar />
         </div>
         <div className="w-full xl:flex-0 min-h-screen z-20">
