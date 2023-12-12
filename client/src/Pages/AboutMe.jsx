@@ -1,8 +1,12 @@
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   return (
     <div className="min-h-screen text-center flex flex-col gap-10 mb-20 items-center justify-center w-full">
+      <Helmet>
+        <title>About Me | Ahammad Abdullah</title>
+      </Helmet>
       <h3 className="text-3xl text-secondary mt-32 font-semibold">Who am i</h3>
       <div className="w-[80%]">
         <h3 className="text-secondary">

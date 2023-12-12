@@ -1,10 +1,14 @@
+import { Helmet } from "react-helmet";
 import Gallery from "../Components/Gallery";
 import Title from "../Components/Title";
 // import bgBlur from "../assets/Background Blurs.png";
 
 const Home = () => {
   return (
-    <div className=" ">
+    <div>
+      <Helmet>
+        <title>Ahammad Abdullah</title>
+      </Helmet>
       <div className=" relative lg:h-screen flex flex-col lg:flex-row  items-center justify-evenly overflow-hidden ">
         <Title />
         <Gallery />

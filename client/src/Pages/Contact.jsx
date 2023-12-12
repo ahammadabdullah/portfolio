@@ -1,5 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import { Helmet } from "react-helmet";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
@@ -28,6 +29,9 @@ const Contact = () => {
   };
   return (
     <div className="min-h-screen flex flex-col gap-10 mb-20 items-center justify-center w-full">
+      <Helmet>
+        <title>Contact | Ahammad Abdullah</title>
+      </Helmet>
       <h3 className="text-3xl text-secondary font-semibold pt-10">
         Contact Me
       </h3>
