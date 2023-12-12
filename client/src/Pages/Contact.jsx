@@ -32,7 +32,7 @@ const Contact = () => {
       <Helmet>
         <title>Contact | Ahammad Abdullah</title>
       </Helmet>
-      <h3 className="text-3xl text-secondary font-semibold pt-10">
+      <h3 className="text-3xl text-secondary font-semibold mt-32 lg:mt-10">
         Contact Me
       </h3>
       <form
