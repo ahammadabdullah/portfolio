@@ -9,7 +9,6 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(form.current);
     emailjs
       .sendForm(
         import.meta.env.VITE_emailJsServiceID,
@@ -29,7 +28,9 @@ const Contact = () => {
   };
   return (
     <div className="min-h-screen flex flex-col gap-10 mb-20 items-center justify-center w-full">
-      <h3 className="text-3xl text-secondary pt-10">Contact Me</h3>
+      <h3 className="text-3xl text-secondary font-semibold pt-10">
+        Contact Me
+      </h3>
       <form
         onSubmit={sendEmail}
         ref={form}
