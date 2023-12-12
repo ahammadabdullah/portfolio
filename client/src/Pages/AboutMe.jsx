@@ -33,7 +33,7 @@ const AboutMe = () => {
         <p>
           <span className="text-highlight">Expertise:</span>HTML5, JavaScript
           ,React JS, CSS, Tailwind, ES6 ,Axios, Express Js, Node js, MongoDB,
-          Firebase, JWT, REST API
+          Firebase, JWT, REST API, TanStack Query
         </p>
         <p>
           <span className="text-highlight">Comfortable:</span> Material-UI
