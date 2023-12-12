@@ -16,14 +16,14 @@ const AboutMe = () => {
           </Link>
           , a dedicated front-end web developer drawn to the MERN stack for its
           flexibility in building interactive web applications. Having just
-          completed a Diploma in Computer Science from Feni Institute, I've
-          cultivated methodical problem-solving abilities and a capacity for
-          overcoming learning challenges. Hands-on experience has provided
-          proficiency in MongoDB, Express, React and Node.js. As a recent
-          graduate, I understand I still have room to evolve through real-world
-          opportunities. With my eagerness, I aim to enhance my MERN abilities
-          to become a skilled full-stack developer adept at crafting complex,
-          scalable web apps.
+          completed a Diploma in engineering in Computer Science from Feni Govt.
+          Computer Institute, I've cultivated methodical problem-solving
+          abilities and a capacity for overcoming learning challenges. Hands-on
+          experience has provided proficiency in MongoDB, Express, React and
+          Node.js. As a recent graduate, I understand I still have room to
+          evolve through real-world opportunities. With my eagerness, I aim to
+          enhance my MERN abilities to become a skilled full-stack developer
+          adept at crafting complex, scalable web apps.
         </h3>
       </div>
       <div className="text-secondary text-left w-[80%]">
