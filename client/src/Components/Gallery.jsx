@@ -14,7 +14,7 @@ const Gallery = () => {
         <img
           className=" rounded-t-lg "
           src={
-            "https://cdn.discordapp.com/attachments/796439138403352596/1183864609896144896/BBClone.jpg?ex=6589e2d6&is=65776dd6&hm=b4a8318f07627313ace8c6611555ff9fa4db019c2b83292519e4836ed263cea9&"
+            "https://cdn.discordapp.com/attachments/796439138403352596/1184040111478931516/image.png?ex=658a8648&is=65781148&hm=70cf9c6b8ca6df25793548a7c15ec4f0d9974ccb1dc151ca5a77817da56535a9&"
           }
           alt=""
         />
@@ -55,18 +55,19 @@ const Gallery = () => {
         <img
           className=" rounded-t-lg "
           src={
-            "https://cdn.discordapp.com/attachments/796439138403352596/1183864609896144896/BBClone.jpg?ex=6589e2d6&is=65776dd6&hm=b4a8318f07627313ace8c6611555ff9fa4db019c2b83292519e4836ed263cea9&"
+            "https://cdn.discordapp.com/attachments/796439138403352596/1184039765666959360/image.png?ex=658a85f6&is=657810f6&hm=b25c4ef571cbbca0adb302b6c7ff115601f5a49d2850e69d4c016455e824c056&"
           }
           alt=""
         />
         <div className="p-4 border-t-[1px] border-secondary">
           <h3 className="text-sm">
-            Empowered educators and engaged students through Edumi, a dynamic
-            online learning platform built with MERN
+            Through Community Food Share, I built a platform that empowers
+            individuals to donate and receive food, fostering a sense of
+            community and tackling food insecurity.
           </h3>
           <div className="flex justify-between">
             <a
-              href="https://edumi-453a2.web.app/"
+              href="https://community-food-share.web.app"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-1"
@@ -74,7 +75,7 @@ const Gallery = () => {
               <LuExternalLink /> <span>Live Site</span>
             </a>
             <a
-              href="https://github.com/ahammadabdullah/edumi-client"
+              href="https://github.com/ahammadabdullah/community-food-share-client"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-1"
@@ -82,7 +83,7 @@ const Gallery = () => {
               <FaCode /> <span>Client </span>
             </a>
             <a
-              href="https://github.com/ahammadabdullah/edumi-server"
+              href="https://github.com/ahammadabdullah/community-food-share-server"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-1"
@@ -96,18 +97,18 @@ const Gallery = () => {
         <img
           className=" rounded-t-lg "
           src={
-            "https://cdn.discordapp.com/attachments/796439138403352596/1183864609896144896/BBClone.jpg?ex=6589e2d6&is=65776dd6&hm=b4a8318f07627313ace8c6611555ff9fa4db019c2b83292519e4836ed263cea9&"
+            "https://cdn.discordapp.com/attachments/796439138403352596/1184039253190115348/image.png?ex=658a857c&is=6578107c&hm=94882c9067709a9797377bc33e000dcd7e703d9918870cf3dcdbfdf4cdf6bfb0&"
           }
           alt=""
         />
         <div className="p-4 border-t-[1px] border-secondary">
           <h3 className="text-sm">
-            Empowered educators and engaged students through Edumi, a dynamic
-            online learning platform built with MERN
+            Explore my expertise through a user-friendly, secure portfolio
+            showcasing my work in the MERN stack.
           </h3>
           <div className="flex justify-between">
             <a
-              href="https://edumi-453a2.web.app/"
+              href="https://ahammad-abdullah.web.app"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-1"
@@ -115,20 +116,12 @@ const Gallery = () => {
               <LuExternalLink /> <span>Live Site</span>
             </a>
             <a
-              href="https://github.com/ahammadabdullah/edumi-client"
+              href="https://github.com/ahammadabdullah/portfolio"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-1"
             >
-              <FaCode /> <span>Client </span>
-            </a>
-            <a
-              href="https://github.com/ahammadabdullah/edumi-server"
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center gap-1"
-            >
-              <FaCode /> <span>Server </span>
+              <FaCode /> <span>Full Project </span>
             </a>
           </div>
         </div>
