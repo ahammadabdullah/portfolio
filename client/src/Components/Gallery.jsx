@@ -14,6 +14,39 @@ const Gallery = () => {
         <img
           className=" rounded-t-lg "
           src={
+            "https://cdn.discordapp.com/attachments/796439138403352596/1193158772688965713/image.png?ex=65abb2b3&is=65993db3&hm=42060c849b68e92ea6305daf0cec72892e1614c33a3b9e26a12198ce533d79fb&"
+          }
+          alt=""
+        />
+        <div className="p-4 border-t-[1px] border-secondary">
+          <h3 className="text-sm">
+            Effortless Task Mastery: Elevate Your Productivity with our MERN
+            Stack Todo Website featuring Seamless Drag-and-Drop Functionality!
+          </h3>
+          <div className="flex justify-between">
+            <a
+              href="https://taskify-ahammad-abdullah.web.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-1"
+            >
+              <LuExternalLink /> <span>Live Site</span>
+            </a>
+            <a
+              href="https://github.com/ahammadabdullah/taskify"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-1"
+            >
+              <FaCode /> <span>Code </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="bg-primary h-fit w-[350px] text-secondary  mx-auto rounded-lg border-secondary border-[1px] ">
+        <img
+          className=" rounded-t-lg "
+          src={
             "https://cdn.discordapp.com/attachments/796439138403352596/1184040111478931516/image.png?ex=658a8648&is=65781148&hm=70cf9c6b8ca6df25793548a7c15ec4f0d9974ccb1dc151ca5a77817da56535a9&"
           }
           alt=""
