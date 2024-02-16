@@ -1,5 +1,5 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import resume from "../assets/_Resume Of Ahammad Abdullah.pdf";
+import { FaGithub, FaHackerrank, FaLinkedin } from "react-icons/fa";
+import resume from "../assets/resume_jr_web_dev.pdf";
 const Title = () => {
   return (
     <div className="text-white min-h-screen lg:min-h-0 flex flex-col justify-center">
@@ -24,6 +24,14 @@ const Title = () => {
             rel="noreferrer"
           >
             <FaLinkedin /> <h3 className="pl-3">/ahammad-abdullah</h3>
+          </a>
+          <a
+            href="https://www.hackerrank.com/profile/ahammadabdullah1"
+            className="flex items-center"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaHackerrank /> <h3 className="pl-3">/Ahammad Abdullah</h3>
           </a>
         </div>
       </div>
