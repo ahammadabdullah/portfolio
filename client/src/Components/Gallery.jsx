@@ -14,7 +14,7 @@ const Gallery = () => {
         <img
           className=" rounded-t-lg "
           src={
-            "https://cdn.discordapp.com/attachments/796439138403352596/1193158772688965713/image.png?ex=65abb2b3&is=65993db3&hm=42060c849b68e92ea6305daf0cec72892e1614c33a3b9e26a12198ce533d79fb&"
+            "https://cdn.discordapp.com/attachments/796439138403352596/1193158772688965713/image.png?ex=6607fbb3&is=65f586b3&hm=5751a636976320e580dfc23629fa781f340654e37d6d22f0ba368d54500b1825&"
           }
           alt=""
         />
@@ -47,7 +47,7 @@ const Gallery = () => {
         <img
           className=" rounded-t-lg "
           src={
-            "https://cdn.discordapp.com/attachments/796439138403352596/1184040111478931516/image.png?ex=658a8648&is=65781148&hm=70cf9c6b8ca6df25793548a7c15ec4f0d9974ccb1dc151ca5a77817da56535a9&"
+            "https://cdn.discordapp.com/attachments/796439138403352596/1184040111478931516/image.png?ex=660bb948&is=65f94448&hm=def89c40b1746d64e5f059e89668b85e55d036a9b495c624cab8980c056f6679&"
           }
           alt=""
         />
@@ -88,7 +88,7 @@ const Gallery = () => {
         <img
           className=" rounded-t-lg "
           src={
-            "https://cdn.discordapp.com/attachments/796439138403352596/1184039765666959360/image.png?ex=658a85f6&is=657810f6&hm=b25c4ef571cbbca0adb302b6c7ff115601f5a49d2850e69d4c016455e824c056&"
+            "https://cdn.discordapp.com/attachments/796439138403352596/1184039765666959360/image.png?ex=660bb8f6&is=65f943f6&hm=aa4fb35ce29336d2cd1e07e4d377151c37cefa24fdf6940b627fdc75a74f68cb&"
           }
           alt=""
         />
@@ -130,7 +130,7 @@ const Gallery = () => {
         <img
           className=" rounded-t-lg "
           src={
-            "https://cdn.discordapp.com/attachments/796439138403352596/1184039253190115348/image.png?ex=658a857c&is=6578107c&hm=94882c9067709a9797377bc33e000dcd7e703d9918870cf3dcdbfdf4cdf6bfb0&"
+            "https://cdn.discordapp.com/attachments/796439138403352596/1184039253190115348/image.png?ex=660bb87c&is=65f9437c&hm=92ce00e325dbbb682965fa506e908018308679c0b2107bc5502d74ebe308d635&"
           }
           alt=""
         />
