@@ -10,9 +10,6 @@ const fira = Fira_Code({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Ahammad Abdullah",
   description: "Portfolio of Ahammad Abdullah",
-  icons: {
-    icon: '/favicon.ico',
-  },
 };
 
 export default function RootLayout({
