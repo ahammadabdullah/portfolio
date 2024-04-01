@@ -1,8 +1,10 @@
-// import image2 from '../assets/Group 4.png'
-// import image3 from '../assets/Group 4.png'
 import { LuExternalLink } from "react-icons/lu";
 import { FaCode } from "react-icons/fa6";
 import Image from "next/image";
+import taskify from "@/assets/taskify.png";
+import edumi from "@/assets/edumi.png";
+import foodshare from "@/assets/foodshare.png";
+import portfolio from "@/assets/portfolio.png";
 
 const Gallery = () => {
   return (
@@ -12,13 +14,7 @@ const Gallery = () => {
         Projects
       </h3>
       <div className="bg-primary h-fit w-[350px] text-secondary  mx-auto rounded-lg border-secondary border-[1px] ">
-        <Image
-          className=" rounded-t-lg "
-          src={
-            "https://cdn.discordapp.com/attachments/796439138403352596/1193158772688965713/image.png?ex=661a70b3&is=6607fbb3&hm=2203ef1945ab2cb27165951de9b16387bf0d5df285c79d3441e2db91e74a8eac&"
-          }
-          alt=""
-        />
+        <Image className=" rounded-t-lg " src={taskify} alt="" />
         <div className="p-4 border-t-[1px] border-secondary">
           <h3 className="text-sm">
             Effortless Task Mastery: Elevate Your Productivity with our MERN
@@ -45,13 +41,7 @@ const Gallery = () => {
         </div>
       </div>
       <div className="bg-primary h-fit w-[350px] text-secondary  mx-auto rounded-lg border-secondary border-[1px] ">
-        <Image
-          className=" rounded-t-lg "
-          src={
-            "https://cdn.discordapp.com/attachments/796439138403352596/1184040111478931516/image.png?ex=660bb948&is=65f94448&hm=def89c40b1746d64e5f059e89668b85e55d036a9b495c624cab8980c056f6679&"
-          }
-          alt=""
-        />
+        <Image className=" rounded-t-lg " src={edumi} alt="" />
         <div className="p-4 border-t-[1px] border-secondary">
           <h3 className="text-sm">
             Empowered educators and engaged students through Edumi, a dynamic
@@ -86,13 +76,7 @@ const Gallery = () => {
         </div>
       </div>
       <div className="bg-primary h-fit text-secondary w-[350px] mx-auto rounded-lg border-secondary border-[1px] ">
-        <Image
-          className=" rounded-t-lg "
-          src={
-            "https://cdn.discordapp.com/attachments/796439138403352596/1184039765666959360/image.png?ex=660bb8f6&is=65f943f6&hm=aa4fb35ce29336d2cd1e07e4d377151c37cefa24fdf6940b627fdc75a74f68cb&"
-          }
-          alt=""
-        />
+        <Image className=" rounded-t-lg " src={foodshare} alt="" />
         <div className="p-4 border-t-[1px] border-secondary">
           <h3 className="text-sm">
             Through Community Food Share, I built a platform that empowers
@@ -128,13 +112,7 @@ const Gallery = () => {
         </div>
       </div>
       <div className="bg-primary h-fit w-[350px] text-secondary  mx-auto rounded-lg border-secondary border-[1px] ">
-        <Image
-          className=" rounded-t-lg "
-          src={
-            "https://cdn.discordapp.com/attachments/796439138403352596/1184039253190115348/image.png?ex=660bb87c&is=65f9437c&hm=92ce00e325dbbb682965fa506e908018308679c0b2107bc5502d74ebe308d635&"
-          }
-          alt=""
-        />
+        <Image className=" rounded-t-lg " src={portfolio} alt="" />
         <div className="p-4 border-t-[1px] border-secondary">
           <h3 className="text-sm">
             Explore my expertise through a user-friendly, secure portfolio

@@ -2,6 +2,7 @@ import Gallery from "@/Components/Gallery";
 import Title from "@/Components/Title";
 import Head from "next/head";
 
+
 export default function Home() {
   return (
     <main className=" relative lg:h-screen flex flex-col lg:flex-row  items-center justify-evenly overflow-hidden ">
