@@ -1,11 +1,22 @@
 import { Helmet } from "react-helmet";
 import Gallery from "../Components/Gallery";
 import Title from "../Components/Title";
+import { useEffect } from "react";
 // import bgBlur from "../assets/Background Blurs.png";
 
 const Home = () => {
-  return (
-    <div>
+  useEffect(() => {
+    window.location.href = "https://ahammadabdullah.vercel.app";
+  },[])
+  return null
+};
+
+export default Home;
+
+
+/**
+ *
+<div>
       <Helmet>
         <title>Ahammad Abdullah</title>
       </Helmet>
@@ -20,7 +31,4 @@ const Home = () => {
         </div>
       </div>
     </div>
-  );
-};
-
-export default Home;
+ * **/
