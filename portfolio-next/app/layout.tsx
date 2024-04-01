@@ -9,7 +9,7 @@ const fira = Fira_Code({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Ahammad Abdullah",
-  description: "Portfolio of Ahammad Abdullah",
+  description: "A project showcasing portfolio of Ahammad Abdullah",
 };
 
 export default function RootLayout({
