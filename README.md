@@ -2,17 +2,16 @@
 
 # This is my personal Portfolio Website
 
-## LIVE LINK: https://ahammad-abdullah.web.app/
+## LIVE LINK: https://ahammadabdullah.vercel.app
 
 ## Tech Stack:
 
-- React
+- NextJS
 - MongoDB
-- expressjs
-- NodeJS
 
 ## Features
 
 - Responsive interface for all devices.
 - Admin Panel for add project and edit project
 - Fully Dynamic Content Collection
+- Static Site Generated using NextJS SSG
