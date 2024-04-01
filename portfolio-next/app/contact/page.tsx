@@ -11,19 +11,19 @@ const Contact = () => {
         e.preventDefault();
         emailjs
             .sendForm(
-                process.env.VITE_emailJsServiceID || "",
-                process.env.VITE_emailsTemplateID || "",
-                form.current!,
-                process.env.VITE_emailjsPublicKey || ""
+            process.env.emailJsServiceID || "",
+            process.env.emailsTemplateID || "",
+            form.current!,
+            process.env.emailjsPublicKey || ""
             )
             .then(
-                () => {
-                    toast.success("Message sent successfully");
-                    router.push("/");
-                },
-                (error) => {
-                    toast.error("Error: " + error.message);
-                }
+            () => {
+                toast.success("Message sent successfully");
+                router.push("/");
+            },
+            (error) => {
+                toast.error("Error: " + error.message);
+            }
             );
     };
 

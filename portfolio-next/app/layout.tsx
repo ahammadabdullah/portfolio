@@ -10,6 +10,9 @@ const fira = Fira_Code({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Ahammad Abdullah",
   description: "Portfolio of Ahammad Abdullah",
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
@@ -19,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link rel="icon" href="/100x.png" sizes="any" />
+      <link rel="icon" href="/favicon.ico" sizes="any" />
       <body className={fira.className}>
       <div className="bg-primary">
       <Toaster />
