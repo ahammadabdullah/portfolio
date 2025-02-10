@@ -6,7 +6,7 @@ const Title = () => {
     <div className="text-white min-h-screen lg:min-h-0 flex flex-col justify-center">
       <h6 className="text-lg">Hi There, I am</h6>
       <h3 className="xl:text-4xl text-2xl">Ahammad Abdullah</h3>
-      <h3 className="text-highlight"> {">"} A MERN Stack Developer</h3>
+      <h3 className="text-highlight"> {">"} Junior FullStack Developer</h3>
       {/* socials here */}
       <div className="pt-8">
         <div className="xl:text-2xl text-xl">
@@ -38,7 +38,7 @@ const Title = () => {
       </div>
       {/* download resume button  */}
       <div className="mt-5">
-        <Link legacyBehavior  href={"resume_jr_web_dev.pdf"}>
+        <Link legacyBehavior href={"Ahammad_Abdullah_fullstack.pdf"}>
           <a
             className="py-2 px-3 bg-highlight rounded hover:bg-secondary"
             download
