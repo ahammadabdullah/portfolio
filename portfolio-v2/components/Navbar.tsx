@@ -136,7 +136,9 @@ const Navbar = () => {
           opacity: isOpen ? 1 : 0,
         }}
         transition={{ duration: 0.3 }}
-        className="md:hidden terminal border-t border-border overflow-hidden"
+        className={`md:hidden terminal border-t border-border overflow-hidden ${
+          isOpen ? "block" : "hidden"
+        }`}
       >
         <div className="terminal-header">navigation@menu:~$</div>
         <div className="space-y-1">

@@ -14,27 +14,23 @@ const config: Config = {
       },
       colors: {
         // Terminal/Code Editor inspired color scheme
-        primary: "#0d1117", // GitHub dark background
-        secondary: "#161b22", // Slightly lighter dark
-        tertiary: "#21262d", // Card/container background
-        accent: "#58a6ff", // GitHub blue
-        "accent-hover": "#1f6feb", // Darker blue on hover
-        success: "#238636", // GitHub green
-        warning: "#d29922", // GitHub yellow
-        error: "#f85149", // GitHub red
-        text: "#f0f6fc", // Light text
-        "text-muted": "#8b949e", // Muted text (comments)
-        "text-secondary": "#c9d1d9", // Secondary text
-        border: "#30363d", // Subtle borders
-        "code-bg": "#0d1117", // Code block background
-        "terminal-green": "#7ee787", // Terminal success
-        "terminal-yellow": "#f1e05a", // Terminal warning
-        "terminal-red": "#ff7b72", // Terminal error
-        "terminal-blue": "#79c0ff", // Terminal info
-        gradient: {
-          start: "#58a6ff",
-          end: "#bc8cff",
-        },
+        primary: "#0d1117",
+        secondary: "#161b22",
+        tertiary: "#21262d",
+        accent: "#58a6ff",
+        "accent-hover": "#1f6feb",
+        success: "#238636",
+        warning: "#d29922",
+        error: "#f85149",
+        text: "#f0f6fc",
+        "text-muted": "#8b949e",
+        "text-secondary": "#c9d1d9",
+        border: "#30363d",
+        "code-bg": "#0d1117",
+        "terminal-green": "#7ee787",
+        "terminal-yellow": "#f1e05a",
+        "terminal-red": "#ff7b72",
+        "terminal-blue": "#79c0ff",
       },
       animation: {
         "terminal-blink": "terminalBlink 1s infinite",
@@ -45,13 +41,9 @@ const config: Config = {
           "51%, 100%": { opacity: "0" },
         },
       },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
     },
   },
   plugins: [],
 };
+
 export default config;

@@ -98,7 +98,7 @@ const SkillsSection = () => {
             <m.div
               key={category.title}
               variants={itemVariants}
-              className="dev-card"
+              className="dev-card my-4"
             >
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center">

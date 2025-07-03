@@ -53,11 +53,11 @@ const AboutHero = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
         <div className="dev-card text-center">
-          <div className="text-2xl font-bold text-terminal-green mb-2">50+</div>
+          <div className="text-2xl font-bold text-terminal-green mb-2">10+</div>
           <div className="text-text-muted text-sm">Projects Completed</div>
         </div>
         <div className="dev-card text-center">
-          <div className="text-2xl font-bold text-terminal-blue mb-2">3+</div>
+          <div className="text-2xl font-bold text-terminal-blue mb-2">1.5+</div>
           <div className="text-text-muted text-sm">Years Experience</div>
         </div>
         <div className="dev-card text-center">
