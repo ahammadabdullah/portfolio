@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Host
+Host: https://v2.ahammadabdullah.com
+
+# Sitemaps
+Sitemap: https://v2.ahammadabdullah.com/sitemap.xml
