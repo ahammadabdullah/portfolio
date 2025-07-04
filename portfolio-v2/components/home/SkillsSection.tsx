@@ -25,7 +25,11 @@ const skillCategories = [
     code: `app.get('/api/users', async (req, res) => {
   const users = await User.find();
   res.json(users);
-});`,
+});
+
+
+
+`,
   },
   {
     title: "Database",

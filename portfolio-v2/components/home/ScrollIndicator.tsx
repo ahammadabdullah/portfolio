@@ -16,7 +16,7 @@ const ScrollIndicator: React.FC<ScrollIndicatorProps> = ({ onClick }) => {
       onClick={onClick}
     >
       <m.div
-        className="flex flex-col items-center space-y-2 text-accent font-mono"
+        className="flex flex-col items-center space-y-0 text-accent font-mono"
         animate={{ y: [0, 10, 0] }}
         transition={{
           duration: 2,
