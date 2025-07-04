@@ -41,13 +41,17 @@ const ContactPage = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-
+    if (!formRef.current) {
+      toast.error("Please fill out the form before submitting.");
+      setIsSubmitting(false);
+      return;
+    }
     try {
       await emailjs.sendForm(
-        process.env.emailJsServiceID || "",
-        process.env.emailsTemplateID || "",
+        process.env.NEXT_PUBLIC_emailJsServiceID || "",
+        process.env.NEXT_PUBLIC_emailsTemplateID || "",
         formRef.current!,
-        process.env.emailjsPublicKey || ""
+        process.env.NEXT_PUBLIC_emailjsPublicKey || ""
       );
       toast.success("Message sent successfully!");
       setFormData({ name: "", email: "", message: "" });
