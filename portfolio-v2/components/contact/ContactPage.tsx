@@ -43,12 +43,11 @@ const ContactPage = () => {
     setIsSubmitting(true);
 
     try {
-      // Note: You'll need to configure EmailJS with your own service ID, template ID, and public key
       await emailjs.sendForm(
-        "service_your_service_id",
-        "template_your_template_id",
+        process.env.emailJsServiceID || "",
+        process.env.emailsTemplateID || "",
         formRef.current!,
-        "your_public_key"
+        process.env.emailjsPublicKey || ""
       );
       toast.success("Message sent successfully!");
       setFormData({ name: "", email: "", message: "" });
