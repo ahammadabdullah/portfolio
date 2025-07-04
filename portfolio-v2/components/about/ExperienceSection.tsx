@@ -46,7 +46,7 @@ const ExperienceSection = () => {
               <span className="text-text-secondary">(HEAD -&gt; main)</span>
               <br />
               <span className="text-text-secondary">
-                Author: Ahammad Abdullah &lt;dev@ahammad.com&gt;
+                Author: Ahammad Abdullah &lt;hi@ahammadabdullah.dev&gt;
               </span>
               <br />
               <span className="text-text-secondary">
