@@ -127,7 +127,7 @@ This portfolio is designed to be deployed on modern platforms like:
 
 For any questions or collaborations, feel free to reach out:
 
-- **Email**: ahammadabdullahnew@gmail.com
+- **Email**: hi@ahammadabdullah.dev
 - **LinkedIn**: [ahammad-abdullah](https://www.linkedin.com/in/ahammad-abdullah/)
 - **GitHub**: [ahammadabdullah](https://github.com/ahammadabdullah)
 

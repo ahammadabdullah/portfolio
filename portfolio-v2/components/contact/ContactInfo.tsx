@@ -12,9 +12,9 @@ const contactInfo = [
   {
     icon: FaEnvelope,
     title: "email",
-    value: "ahammadabdullahnew@gmail.com",
-    href: "mailto:ahammadabdullahnew@gmail.com",
-    command: "mail -s 'Hello' ahammadabdullahnew@gmail.com",
+    value: "hi@ahammadabdullah.dev",
+    href: "mailto:hi@ahammadabdullah.dev",
+    command: "mail -s 'Hello' hi@ahammadabdullah.dev",
     status: "online",
   },
   {
