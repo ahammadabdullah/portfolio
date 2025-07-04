@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description:
       "Learn more about Ahammad Abdullah, a passionate Full Stack Developer with expertise in modern web technologies.",
     type: "profile",
-    url: "https://v2.ahammadabdullah.com/about",
+    url: "https://ahammadabdullah.dev/about",
   },
 };
 

@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://v2.ahammadabdullah.com
+Host: https://ahammadabdullah.dev
 
 # Sitemaps
-Sitemap: https://v2.ahammadabdullah.com/sitemap.xml
+Sitemap: https://ahammadabdullah.dev/sitemap.xml

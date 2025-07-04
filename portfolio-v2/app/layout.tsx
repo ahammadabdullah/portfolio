@@ -14,7 +14,7 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://v2.ahammadabdullah.com"),
+  metadataBase: new URL("https://ahammadabdullah.dev"),
   title: {
     default: "Ahammad Abdullah - Full Stack Developer",
     template: "%s | Ahammad Abdullah",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://v2.ahammadabdullah.com",
+    url: "https://ahammadabdullah.dev",
     title: "Ahammad Abdullah - Full Stack Developer",
     description:
       "Experienced Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies. Creating scalable, efficient digital solutions.",
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     creator: "@ahammadabdullah",
   },
   alternates: {
-    canonical: "https://v2.ahammadabdullah.com",
+    canonical: "https://ahammadabdullah.dev",
   },
   verification: {
     google: "your-google-verification-code",
