@@ -19,7 +19,7 @@ const socialLinks = [
   },
   {
     icon: SiHackerrank,
-    href: "https://www.hackerrank.com/ahammadabdullah",
+    href: "https://www.hackerrank.com/profile/ahammadabdullah1",
     label: "HackerRank",
     username: "@ahammadabdullah",
   },
