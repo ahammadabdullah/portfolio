@@ -80,9 +80,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://ahammadabdullah.dev",
   },
-  verification: {
-    google: "your-google-verification-code",
-  },
 };
 
 export default function RootLayout({
