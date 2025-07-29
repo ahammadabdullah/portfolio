@@ -479,6 +479,12 @@ body {
 .lang-typescript {
   color: #3178c6;
 }
+.lang-nextjs {
+  color: #000000;
+}
+.lang-tailwind {
+  color: #38bdf8;
+}
 .lang-react {
   color: #61dafb;
 }

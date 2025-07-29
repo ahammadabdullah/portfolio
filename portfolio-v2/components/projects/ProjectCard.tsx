@@ -94,6 +94,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
                       ? "lang-node"
                       : tech.toLowerCase() === "python"
                       ? "lang-python"
+                      : tech.toLowerCase() === "next.js" ||
+                        tech.toLowerCase() === "nextjs"
+                      ? "lang-nextjs"
+                      : tech.toLowerCase() === "tailwind css" ||
+                        tech.toLowerCase() === "tailwind"
+                      ? "lang-tailwind"
                       : ""
                   }`}
                 >

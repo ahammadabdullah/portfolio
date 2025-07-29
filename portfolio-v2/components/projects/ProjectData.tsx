@@ -4,6 +4,7 @@ import foodshare from "@/assets/foodshare.png";
 import portfolio from "@/assets/portfolio.png";
 import aiSaaSBoilerplate from "@/assets/ai-saas-boilerplate.png";
 import sellto from "@/assets/sellto.png";
+import devutils from "@/assets/devutils.png";
 
 export interface Project {
   title: string;
@@ -17,6 +18,18 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    title: "DevUtils",
+    description:
+      "A versatile desktop application built with Electron to streamline developer workflows by providing handy utilities all in one place.",
+    image: devutils,
+    technologies: ["Electron", "Next.js", "TypeScript", "Tailwind CSS"],
+    links: {
+      live: "https://github.com/ahammadabdullah/dev-utils/releases/tag/v1.0.1",
+      repo: "https://github.com/ahammadabdullah/dev-utils",
+    },
+    featured: true,
+  },
   {
     title: "Sellto",
     description:
