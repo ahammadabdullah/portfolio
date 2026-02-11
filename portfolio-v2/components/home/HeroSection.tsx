@@ -120,6 +120,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ heroInView }) => {
                 <span className="syntax-string">"Ahammad Abdullah"</span>,
                 <br />
                 {"  "}skills: [<span className="syntax-string">"React"</span>,{" "}
+                <span className="syntax-string">"Next.js"</span>,{" "}
                 <span className="syntax-string">"Node.js"</span>,{" "}
                 <span className="syntax-string">"TypeScript"</span>],
                 <br />
