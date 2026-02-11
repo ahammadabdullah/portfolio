@@ -5,6 +5,7 @@ import portfolio from "@/assets/portfolio.png";
 import aiSaaSBoilerplate from "@/assets/ai-saas-boilerplate.png";
 import sellto from "@/assets/sellto.png";
 import devutils from "@/assets/devutils.png";
+import nirbhik from "@/assets/nirbhik.png";
 
 export interface Project {
   title: string;
@@ -19,13 +20,24 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Nirbhik.io",
+    description:
+      "An insurance aggregation platform featuring a schema-driven dynamic form engine with adaptive multi-step flows, granular role-based permissions, and resilient cross-page state persistence.",
+    image: nirbhik,
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Zustand"],
+    links: {
+      live: "http://stage.nirbhik.io/",
+    },
+    featured: true,
+  },
+  {
     title: "DevUtils",
     description:
       "A versatile desktop application built with Electron to streamline developer workflows by providing handy utilities all in one place.",
     image: devutils,
     technologies: ["Electron", "Next.js", "TypeScript", "Tailwind CSS"],
     links: {
-      live: "https://github.com/ahammadabdullah/dev-utils/releases/tag/v1.0.1",
+      live: "https://github.com/ahammadabdullah/dev-utils/releases/",
       repo: "https://github.com/ahammadabdullah/dev-utils",
     },
     featured: true,
