@@ -119,7 +119,6 @@ export default function RootLayout({
                 },
               }}
             />
-            <VersionSwitcher />
             <Navbar />
             <main className="pt-16 relative z-10">{children}</main>
           </div>

@@ -9,15 +9,15 @@ const VersionSwitcher = () => {
 
   const versions = [
     {
-      version: "V1",
-      url: `${process.env.v1Domain || "http://localhost:3000"}`,
-      label: "Original",
-    },
-    {
       version: "V2",
       url: `${process.env.v2Domain || "http://localhost:3001"}`,
-      label: "Modern",
+      label: "Current",
       current: true,
+    },
+    {
+      version: "V3",
+      url: `${process.env.v3Domain || "http://localhost:3002"}`,
+      label: "Latest",
     },
   ];
 

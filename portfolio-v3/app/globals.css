@@ -1,0 +1,224 @@
+@import "tailwindcss";
+
+/* ============================================================
+   DESIGN TOKENS — Modern Dark Cinema × Exaggerated Minimalism
+   Source: ui-ux-pro-max design system (portfolio, dark mode)
+   ============================================================ */
+
+@theme {
+  /* ── Backgrounds (OLED-optimised depth layers) ── */
+  --color-deep:     #020203;   /* deepest: hero bg, OLED black */
+  --color-base:     #050506;   /* page background */
+  --color-surface:  #0d0d10;   /* cards, sections */
+  --color-elevated: #14141a;   /* inputs, hover, active */
+  --color-overlay:  #1a1a22;   /* tooltips, dropdowns */
+
+  /* ── Borders (hairline rgba — Linear/Vercel signature) ── */
+  --color-border-subtle:  rgba(255,255,255,0.04);
+  --color-border-default: rgba(255,255,255,0.08);
+  --color-border-strong:  rgba(255,255,255,0.16);
+  --color-border-accent:  rgba(124,58,237,0.40);
+
+  /* ── Text hierarchy ── */
+  --color-text-primary:   #EDEDEF;   /* warm near-white — less harsh than pure #fff */
+  --color-text-secondary: #8A8F98;   /* body, descriptions */
+  --color-text-muted:     #4A4D58;   /* labels, metadata, placeholders */
+  --color-text-disabled:  #2E3140;   /* disabled states */
+
+  /* ── Accent — Violet (brand differentiator from v2's GitHub blue) ── */
+  --color-accent:       #7C3AED;                        /* violet-600 */
+  --color-accent-light: #8B5CF6;                        /* violet-500, hover */
+  --color-accent-dim:   rgba(124, 58, 237, 0.12);       /* dim surface bg */
+  --color-accent-glow:  rgba(124, 58, 237, 0.25);       /* shadow glow */
+
+  /* ── Semantic: "Slop" problem callouts (ProblemSection only) ── */
+  --color-slop-red:       #EF4444;
+  --color-slop-red-dim:   rgba(239, 68, 68, 0.10);
+  --color-slop-red-glow:  rgba(239, 68, 68, 0.20);
+
+  /* ── Semantic: clean code indicators ── */
+  --color-clean-green:     #22C55E;
+  --color-clean-green-dim: rgba(34, 197, 94, 0.10);
+
+  /* ── Typography ── */
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+
+  /* ── Border radius scale ── */
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   14px;   /* cards — Modern Dark Cinema recommendation */
+  --radius-xl:   20px;
+  --radius-2xl:  28px;
+  --radius-full: 9999px; /* pill buttons */
+
+  /* ── Animation easing (confirmed by Modern Dark Cinema) ── */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-expo:  cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-spring:   cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ── Duration scale ── */
+  --duration-fast:   150ms;
+  --duration-normal: 250ms;
+  --duration-slow:   400ms;
+}
+
+/* ============================================================
+   BASE
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-base);
+  color: var(--color-text-primary);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+/* Focus ring — accessible, on-brand */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
+
+::-webkit-scrollbar       { width: 5px; }
+::-webkit-scrollbar-track { background: var(--color-surface); }
+::-webkit-scrollbar-thumb {
+  background: rgba(124, 58, 237, 0.4);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--color-accent); }
+
+/* ============================================================
+   UTILITIES
+   ============================================================ */
+
+@layer utilities {
+
+  /* Shadow system */
+  .shadow-card {
+    box-shadow:
+      0 0 0 1px var(--color-border-default),
+      0 4px 24px rgba(0, 0, 0, 0.5);
+  }
+
+  .shadow-card-hover {
+    box-shadow:
+      0 0 0 1px var(--color-border-accent),
+      0 8px 40px rgba(0, 0, 0, 0.6),
+      0 0 60px var(--color-accent-glow);
+  }
+
+  .shadow-glow {
+    box-shadow: 0 0 40px var(--color-accent-glow);
+  }
+
+  .shadow-glow-strong {
+    box-shadow: 0 0 80px rgba(124, 58, 237, 0.40);
+  }
+
+  .shadow-slop {
+    box-shadow:
+      0 0 0 1px rgba(239, 68, 68, 0.20),
+      0 0 30px var(--color-slop-red-glow);
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: linear-gradient(135deg, #EDEDEF 0%, #8A8F98 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-text-accent {
+    background: linear-gradient(135deg, #A78BFA 0%, #7C3AED 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Glass surface — for nav backdrop, tooltips */
+  .glass {
+    background: rgba(5, 5, 6, 0.80);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--color-border-default);
+  }
+
+  /* Pill tag */
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1;
+    padding: 0.375rem 0.75rem;
+    border-radius: var(--radius-full);
+    background: var(--color-elevated);
+    color: var(--color-text-secondary);
+    border: 1px solid var(--color-border-default);
+    transition: border-color var(--duration-fast), color var(--duration-fast);
+  }
+
+  .tag:hover {
+    border-color: var(--color-border-strong);
+    color: var(--color-text-primary);
+  }
+
+  /* Accent tag variant */
+  .tag-accent {
+    background: var(--color-accent-dim);
+    color: var(--color-accent-light);
+    border-color: rgba(124, 58, 237, 0.25);
+  }
+
+  /* Section label (01 / The Problem style) */
+  .section-label {
+    font-size: 0.70rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+  }
+
+  /* Hero headline — Exaggerated Minimalism */
+  .hero-headline {
+    font-size: clamp(3.5rem, 9vw, 7rem);
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    line-height: 0.95;
+  }
+
+  /* Section heading */
+  .section-heading {
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
