@@ -122,6 +122,7 @@ export default function RootLayout({
             <Navbar />
             <main className="pt-16 relative z-10">{children}</main>
           </div>
+        <VersionSwitcher />
         </MotionProvider>
       </body>
     </html>
