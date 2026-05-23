@@ -1,7 +1,6 @@
 "use client";
 
 import { m } from "@/providers/MotionProvider";
-import { useInView } from "react-intersection-observer";
 
 const badCode = [
   { line: `async function getUser(id) {`, badge: null },
@@ -39,15 +38,7 @@ const cleanCode = [
   { line: `}`, badge: null },
 ];
 
-function CodePanel({
-  lines,
-  variant,
-  inView,
-}: {
-  lines: typeof badCode;
-  variant: "bad" | "clean";
-  inView: boolean;
-}) {
+function CodePanel({ lines, variant }: { lines: typeof badCode; variant: "bad" | "clean" }) {
   const isBad = variant === "bad";
   return (
     <div
@@ -57,75 +48,34 @@ function CodePanel({
           : "border-[--color-border-accent] bg-[rgba(124,58,237,0.04)]"
       }`}
     >
-      {/* Watermark — bad panel only */}
       {isBad && (
-        <div
-          className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden"
-          aria-hidden
-        >
-          <span
-            className="text-[10rem] font-black text-[--color-slop-red] rotate-[-25deg] opacity-[0.05] leading-none"
-          >
-            SLOP
-          </span>
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden" aria-hidden>
+          <span className="text-[10rem] font-black text-[--color-slop-red] rotate-[-25deg] opacity-[0.05] leading-none">SLOP</span>
         </div>
       )}
-
-      {/* Panel header */}
-      <div
-        className={`flex items-center justify-between px-4 py-3 border-b ${
-          isBad ? "border-[rgba(239,68,68,0.15)]" : "border-[--color-border-accent]"
-        }`}
-      >
-        <span
-          className={`text-xs uppercase tracking-widest font-semibold ${
-            isBad ? "text-[--color-slop-red]" : "text-[--color-accent]"
-          }`}
-        >
+      <div className={`flex items-center justify-between px-4 py-3 border-b ${isBad ? "border-[rgba(239,68,68,0.15)]" : "border-[--color-border-accent]"}`}>
+        <span className={`text-xs uppercase tracking-widest font-semibold ${isBad ? "text-[--color-slop-red]" : "text-accent"}`}>
           {isBad ? "What shipped" : "What it should look like"}
         </span>
         <div className="flex gap-1.5">
           {[0, 1, 2].map((i) => (
-            <div
-              key={i}
-              className={`w-2.5 h-2.5 rounded-full ${
-                isBad ? "bg-[rgba(239,68,68,0.30)]" : "bg-[rgba(124,58,237,0.30)]"
-              }`}
-            />
+            <div key={i} className={`w-2.5 h-2.5 rounded-full ${isBad ? "bg-[rgba(239,68,68,0.30)]" : "bg-[rgba(124,58,237,0.30)]"}`} />
           ))}
         </div>
       </div>
-
-      {/* Code */}
-      <div className="p-4 font-mono text-xs md:text-sm overflow-x-auto">
+      <div className="p-4 font-mono text-xs overflow-x-auto">
         {lines.map((item, i) => (
           <m.div
             key={i}
             initial={{ opacity: 0, x: isBad ? -8 : 8 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.3, delay: 0.3 + i * 0.04 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.3, delay: 0.1 + i * 0.03 }}
             className="flex items-center gap-3 leading-relaxed min-h-[1.6em]"
           >
-            <span
-              className={`shrink-0 w-6 text-right text-[--color-text-muted] text-[10px] select-none`}
-            >
-              {i + 1}
-            </span>
-            <span
-              className={`whitespace-pre ${
-                isBad ? "text-[--color-text-secondary]" : "text-[--color-text-primary]"
-              }`}
-            >
-              {item.line}
-            </span>
+            <span className="shrink-0 w-6 text-right text-[--color-text-muted] text-[10px] select-none">{i + 1}</span>
+            <span className={`whitespace-pre ${isBad ? "text-[--color-text-secondary]" : "text-[--color-text-primary]"}`}>{item.line}</span>
             {item.badge && (
-              <span
-                className={`ml-auto shrink-0 text-[10px] font-semibold px-2 py-0.5 rounded-full ${
-                  isBad
-                    ? "bg-[--color-slop-red]/15 text-[--color-slop-red]"
-                    : "bg-[--color-accent]/15 text-[--color-accent]"
-                }`}
-              >
+              <span className={`ml-auto shrink-0 text-[10px] font-semibold px-2 py-0.5 rounded-full ${isBad ? "bg-[--color-slop-red]/15 text-[--color-slop-red]" : "bg-accent/15 text-accent"}`}>
                 {item.badge}
               </span>
             )}
@@ -137,44 +87,34 @@ function CodePanel({
 }
 
 export default function ProblemSection() {
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.15 });
-
   return (
-    <section ref={ref} className="max-w-6xl mx-auto px-6 md:px-12 py-28 md:py-40">
-      {/* Label */}
-      <m.p
-        initial={{ opacity: 0, y: 20 }}
-        animate={inView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.6 }}
-        className="text-xs uppercase tracking-widest font-semibold text-[--color-accent] mb-4"
-      >
-        01 / The Problem
-      </m.p>
+    <>
+      <p className="text-xs font-bold uppercase tracking-[0.2em] text-[--color-text-muted]">
+        01 — The Problem
+      </p>
 
-      {/* Heading */}
-      <m.h2
-        initial={{ opacity: 0, y: 30 }}
-        animate={inView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-        className="text-4xl md:text-5xl font-bold tracking-[-0.02em] text-[--color-text-primary] mb-6 max-w-2xl"
-      >
-        What &ldquo;AI-generated&rdquo; actually looks like in production
-      </m.h2>
+      <hr className="border-none border-t border-white/10" />
 
-      <m.p
-        initial={{ opacity: 0, y: 20 }}
-        animate={inView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.6, delay: 0.2 }}
-        className="text-[--color-text-secondary] text-lg leading-[1.7] max-w-xl mb-14"
-      >
-        The problem isn&apos;t using AI. It&apos;s not knowing what good looks like.
-      </m.p>
-
-      {/* Split panels */}
-      <div className="grid md:grid-cols-2 gap-6">
-        <CodePanel lines={badCode} variant="bad" inView={inView} />
-        <CodePanel lines={cleanCode} variant="clean" inView={inView} />
+      <div>
+        <h2 className="text-[clamp(3rem,10vw,10rem)] font-black leading-[0.88] uppercase tracking-tight text-[--color-text-primary]">
+          Slop<br />
+          ships<br />
+          <span className="text-[--color-slop-red]">fast.</span>
+        </h2>
       </div>
-    </section>
+
+      <hr className="border-none border-t border-white/10" />
+
+      <p className="max-w-[60ch] text-[clamp(1rem,2vw,1.5rem)] font-normal leading-relaxed text-[--color-text-secondary]">
+        Your sprint velocity doubles. Your maintenance bill triples. Developers who ship AI output without review create a debt their clients pay for years.
+      </p>
+
+      <hr className="border-none border-t border-white/10" />
+
+      <div className="grid md:grid-cols-2 gap-5">
+        <CodePanel lines={badCode} variant="bad" />
+        <CodePanel lines={cleanCode} variant="clean" />
+      </div>
+    </>
   );
 }

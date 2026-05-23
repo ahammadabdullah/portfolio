@@ -68,6 +68,24 @@ Track implementation tasks here. Mark `[ ]` → `[x]` as each completes.
 - [x] `npm run lint` — zero errors ✓
 - [x] Design tokens upgraded via ui-ux-pro-max — Modern Dark Cinema palette, hairline rgba borders, shadow system, radius scale, animation easing tokens, glass utility, hero-headline + section-heading utilities
 
+## Phase 10 — Story-Scroll Single-Page Redesign
+
+See `doc/plans/story-scroll-redesign.md` for full plan.
+
+- [x] Install gsap + @gsap/react
+- [x] Create `components/ui/story-scroll.tsx` — FlowArt + FlowSection (GSAP scroll-pin + rotate)
+- [x] `app/layout.tsx` — remove Navbar, keep VersionSwitcher
+- [x] `components/work/WorkData.tsx` — add `businessOutcome` field to interface + 3 featured projects
+- [x] `components/home/HeroSection.tsx` — new subline copy, remove outer `<section>`
+- [x] `components/home/ProblemSection.tsx` — add business framing above diff, remove outer `<section>`
+- [x] `components/home/ApproachSection.tsx` — CEO-readable step bodies, remove outer `<section>`
+- [x] `components/home/WorkPreviewSection.tsx` — show businessOutcome in cards, remove outer `<section>`
+- [x] `components/home/CredibilitySection.tsx` — upgraded stats + "What you get" strip, remove outer `<section>`
+- [x] `components/home/CtaSection.tsx` — add supporting line, remove outer `<section>`
+- [x] `components/home/AboutContactSection.tsx` — new: bio + 4 social links
+- [x] `components/home/HomePage.tsx` — FlowArt + 7 FlowSection panels
+- [ ] Verify: 7 panels animate, last panel not pinned, VersionSwitcher above all panels
+
 ---
 
 ## Verification

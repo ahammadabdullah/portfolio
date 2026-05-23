@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
 import VersionSwitcher from "@/components/VersionSwitcher";
 import { MotionProvider } from "@/providers/MotionProvider";
 
@@ -15,6 +14,13 @@ const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
   subsets: ["latin"],
   display: "swap",
+});
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta",
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -64,7 +70,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}
+      className={`${inter.variable} ${jetbrainsMono.variable} ${plusJakartaSans.variable} antialiased`}
     >
       <head>
         <meta name="theme-color" content="#050506" />
@@ -72,8 +78,7 @@ export default function RootLayout({
       <body className="bg-[--color-base] text-[--color-text-primary] min-h-screen">
         <MotionProvider>
           <VersionSwitcher />
-          <Navbar />
-          <main className="pt-16">{children}</main>
+          {children}
         </MotionProvider>
       </body>
     </html>

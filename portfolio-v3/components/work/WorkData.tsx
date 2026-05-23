@@ -1,6 +1,7 @@
 export interface Project {
   title: string;
   description: string;
+  businessOutcome?: string;
   architecturalNote: string;
   complexityCallout: string;
   technologies: string[];
@@ -14,6 +15,8 @@ export const projects: Project[] = [
     title: "Nirbhik.io",
     description:
       "Insurance aggregation platform with a schema-driven dynamic form engine, adaptive multi-step flows, and cross-page state persistence.",
+    businessOutcome:
+      "Schema-driven engine handling 8+ product types, 40+ fields per form — shipped in production without rewriting UI per product.",
     architecturalNote:
       "Schema-driven form engine — the schema defines field types, validation rules, and conditional branching. Swapping product types rewires the entire form without touching UI code.",
     complexityCallout:
@@ -26,6 +29,8 @@ export const projects: Project[] = [
     title: "DevUtils",
     description:
       "Desktop application built with Electron that consolidates developer utilities — JSON formatter, base64, hash generators, regex tester — into a single offline-first tool.",
+    businessOutcome:
+      "Cross-platform desktop app with auto-update and code-signing — zero-dependency tool that works fully offline.",
     architecturalNote:
       "Next.js renders the UI inside Electron's renderer process. IPC bridges handle clipboard and file system access without exposing Node APIs to the renderer directly.",
     complexityCallout:
@@ -41,6 +46,8 @@ export const projects: Project[] = [
     title: "Sellto",
     description:
       "All-in-one digital store platform for selling software, communities, and digital products — from storefront to checkout to delivery.",
+    businessOutcome:
+      "Multi-tenant SaaS with Stripe payments and signed file delivery — isolated per-store data, zero server middleware for auth.",
     architecturalNote:
       "Supabase handles auth, storage, and real-time subscriptions. Product delivery is gated behind Supabase RLS policies — no server middleware needed.",
     complexityCallout:
@@ -53,6 +60,8 @@ export const projects: Project[] = [
     title: "AI SaaS Boilerplate",
     description:
       "Production-ready AI SaaS template with OpenAI integration, Stripe subscriptions, modular email templates, and role-based access.",
+    businessOutcome:
+      "Reusable foundation that skips 4–6 weeks of auth, billing, and AI plumbing — plan-gated features, usage metering, webhook idempotency.",
     architecturalNote:
       "Feature flags control which AI models are available per plan tier. Stripe webhooks sync subscription state to Prisma — no polling, no stale gates.",
     complexityCallout:
