@@ -23,8 +23,10 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   weight: ["400", "500", "600", "700", "800"],
 });
 
+const BASE_URL = "https://hire.ahammadabdullah.dev";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ahammadabdullah.dev"),
+  metadataBase: new URL(BASE_URL),
   title: {
     default: "Ahammad Abdullah — Full Stack Developer",
     template: "%s | Ahammad Abdullah",
@@ -33,33 +35,78 @@ export const metadata: Metadata = {
     "Full Stack Developer who builds with AI tools the right way. Clean architecture, maintainable code, systems that scale.",
   keywords: [
     "Full Stack Developer",
-    "Next.js",
-    "TypeScript",
-    "React",
+    "Next.js developer",
+    "TypeScript developer",
+    "React developer",
     "AI-augmented development",
     "Ahammad Abdullah",
+    "Full Stack Developer Bangladesh",
+    "Next.js developer Dhaka",
+    "hire full stack developer",
   ],
-  authors: [{ name: "Ahammad Abdullah", url: "https://ahammadabdullah.dev" }],
+  authors: [{ name: "Ahammad Abdullah", url: BASE_URL }],
   creator: "Ahammad Abdullah",
+  category: "technology",
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://ahammadabdullah.dev",
+    url: BASE_URL,
     title: "Ahammad Abdullah — Full Stack Developer",
     description:
       "Full Stack Developer who builds with AI tools the right way. Clean architecture, maintainable code, systems that scale.",
     siteName: "Ahammad Abdullah",
-    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Ahammad Abdullah — Full Stack Developer",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Ahammad Abdullah — Full Stack Developer",
-    description:
-      "Full Stack Developer who builds with AI tools the right way.",
+    description: "Full Stack Developer who builds with AI tools the right way.",
     images: ["/og-image.png"],
   },
-  alternates: { canonical: "https://ahammadabdullah.dev" },
+  alternates: { canonical: BASE_URL },
+};
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Ahammad Abdullah",
+  jobTitle: "Full Stack Developer",
+  url: BASE_URL,
+  image: `${BASE_URL}/og-image.png`,
+  email: "hi@ahammadabdullah.dev",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Dhaka",
+    addressCountry: "BD",
+  },
+  sameAs: [
+    "https://github.com/ahammadabdullah",
+    "https://linkedin.com/in/ahammad-abdullah",
+  ],
+  knowsAbout: [
+    "Next.js",
+    "TypeScript",
+    "React",
+    "Node.js",
+    "Supabase",
+    "AI-augmented development",
+  ],
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Ahammad Abdullah",
+  url: BASE_URL,
+  description: "Full Stack Developer who builds with AI tools the right way.",
 };
 
 export default function RootLayout({
@@ -74,6 +121,14 @@ export default function RootLayout({
     >
       <head>
         <meta name="theme-color" content="#050506" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
       </head>
       <body className="bg-[--color-base] text-[--color-text-primary] min-h-screen">
         <MotionProvider>

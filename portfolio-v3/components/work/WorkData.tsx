@@ -116,7 +116,7 @@ export const projects: Project[] = [
     complexityCallout: "Framer Motion LazyMotion with tree-shaken domAnimation bundle.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     links: {
-      live: "https://ahammadabdullah.dev",
+      live: "https://hire.ahammadabdullah.dev",
       github: "https://github.com/ahammadabdullah/portfolio",
     },
   },
