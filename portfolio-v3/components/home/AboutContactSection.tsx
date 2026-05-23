@@ -49,7 +49,7 @@ export default function AboutContactSection() {
             </a>
           ))}
         </div>
-        <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.1em] font-semibold text-[--color-text-muted]">
+        <span className="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-semibold text-[--color-text-muted]">
           <span className="w-1.5 h-1.5 bg-[--color-clean-green] rounded-full animate-pulse" />
           Available for projects · 2026
         </span>
