@@ -6,18 +6,18 @@ import { useInView } from "react-intersection-observer";
 const steps = [
   {
     number: "01",
-    label: "Generate",
-    body: "I prompt AI tools to produce first drafts — fast. Architecture decisions, tech stack, API shape. Speed without skipping thinking.",
+    label: "Architect",
+    body: "Before a single prompt is written, I define the system: data shapes, API boundaries, component contracts, edge cases. AI can't plan what it doesn't understand — I do that first.",
   },
   {
     number: "02",
-    label: "Judge",
-    body: "Every output goes through a mental review: Does this type? Does this compose? Does this scale? If no — rewrite. If yes — refine.",
+    label: "Generate",
+    body: "With a clear blueprint, I direct AI tools to produce implementations — fast. The plan constrains the output. Speed without sacrificing intent.",
   },
   {
     number: "03",
-    label: "Architect",
-    body: "The pieces get assembled into a coherent system. Consistent patterns. Documented decisions. Code a human can maintain two years from now.",
+    label: "Review",
+    body: "Every output gets interrogated: Does this type? Does this compose? Does this scale? If no — rewrite. If yes — ship. Nothing lands in production unread.",
   },
 ];
 
@@ -31,7 +31,7 @@ export default function ApproachSection() {
         initial={{ opacity: 0, y: 20 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
-        className="text-xs uppercase tracking-widest font-semibold text-[--color-accent] mb-4"
+        className="text-xs uppercase tracking-widest font-semibold text-accent mb-4"
       >
         02 / The Method
       </m.p>

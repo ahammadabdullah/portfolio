@@ -32,14 +32,6 @@ export default function Navbar() {
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 md:px-12 h-16 flex items-center justify-between">
-        {/* Logo */}
-        <Link
-          href="/"
-          className="text-xl font-black text-[--color-text-primary] tracking-[-0.04em] hover:text-[--color-accent] transition-colors duration-200"
-        >
-          AA
-        </Link>
-
         {/* Desktop nav */}
         <ul className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
