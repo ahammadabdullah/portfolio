@@ -57,7 +57,7 @@ const AboutHero = () => {
           <div className="text-text-muted text-sm">Projects Completed</div>
         </div>
         <div className="dev-card text-center">
-          <div className="text-2xl font-bold text-terminal-blue mb-2">1.5+</div>
+          <div className="text-2xl font-bold text-terminal-blue mb-2">2.5+</div>
           <div className="text-text-muted text-sm">Years Experience</div>
         </div>
         <div className="dev-card text-center">

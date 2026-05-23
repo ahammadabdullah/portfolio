@@ -62,9 +62,17 @@ export const skillsData = {
 
 export const experienceData: Experience[] = [
   {
+    title: "Executive | Full Stack Developer",
+    company: "Rangs Group",
+    duration: "Mar 2026 - Present",
+    description:
+      "Developed and maintained multiple web applications using modern technologies. Collaborated with clients to deliver high-quality solutions that meet their business requirements.",
+    technologies: ["React", "Next.js", "Node.js", "MongoDB", "Supabase"],
+  },
+  {
     title: "Jr Full Stack Developer",
     company: "Level 7 Marketing Solutions",
-    duration: "2024 Jan - Present",
+    duration: "Jan 2024 - Mar 2026",
     description:
       "Developed and maintained multiple web applications using modern technologies. Collaborated with clients to deliver high-quality solutions that meet their business requirements.",
     technologies: ["React", "Next.js", "Node.js", "MongoDB", "Supabase"],
