@@ -14,12 +14,12 @@ export interface AITool {
 }
 
 export const bio =
-  "Full Stack Developer based in Dhaka, Bangladesh. Currently building web applications at Level 7 Marketing Solutions, working across the stack with Next.js, TypeScript, and Node.js. I use AI tools daily — and I review everything they produce before it ships.";
+  "Full Stack Developer based in Dhaka, Bangladesh. Currently building web applications at Rangs Group, working across the stack with Next.js, TypeScript, and Node.js. I use AI tools daily — and I review everything they produce before it ships.";
 
 export const experienceData: Experience[] = [
   {
     title: "Jr Full Stack Developer",
-    company: "Level 7 Marketing Solutions",
+    company: "Rangs Group",
     duration: "Jan 2024 — Present",
     description:
       "Build and maintain client-facing web applications across the full stack. Collaborate directly with clients to scope features and deliver production-ready code.",

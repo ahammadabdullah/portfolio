@@ -17,7 +17,7 @@ export default function AboutContactSection() {
         06 — Who I Am
       </p>
 
-      <hr className="border-none border-t border-white/10" />
+      <hr className="border-t border-white/10" />
 
       <div>
         <h2 className="text-[clamp(3rem,10vw,10rem)] font-black leading-[0.88] uppercase tracking-tight text-[--color-text-primary]">
@@ -26,13 +26,13 @@ export default function AboutContactSection() {
         </h2>
       </div>
 
-      <hr className="border-none border-t border-white/10" />
+      <hr className="border-t border-white/10" />
 
       <p className="max-w-[50ch] text-[clamp(1rem,2vw,1.5rem)] font-normal leading-relaxed text-[--color-text-secondary]">
         {bio}
       </p>
 
-      <hr className="border-none border-t border-white/10" />
+      <hr className="border-t border-white/10" />
 
       <div className="flex flex-col gap-6">
         <div className="flex flex-wrap gap-3">
