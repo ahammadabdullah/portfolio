@@ -67,7 +67,7 @@ export const experienceData: Experience[] = [
     duration: "Mar 2026 - Present",
     description:
       "Developed and maintained multiple web applications using modern technologies. Collaborated with clients to deliver high-quality solutions that meet their business requirements.",
-    technologies: ["React", "Next.js", "Node.js", "MongoDB", "Supabase"],
+    technologies: ["React", "Next.js", "Node.js", "Postgresql", "Gemini", "GSAP", "PHP"],
   },
   {
     title: "Jr Full Stack Developer",
