@@ -2,36 +2,6 @@
 
 This guide covers how to deploy both versions of your portfolio to different platforms.
 
-## 🚀 V1 (Original) Deployment
-
-### Vercel Deployment (Recommended)
-
-1. **Connect to GitHub**:
-
-   - Push your V1 code to GitHub
-   - Go to [Vercel](https://vercel.com)
-   - Import your GitHub repository
-   - Set the project name to `portfolio-v1`
-
-2. **Configure Environment Variables**:
-
-   ```
-   EMAIL_JS_SERVICE_ID=your_service_id
-   EMAIL_JS_TEMPLATE_ID=your_template_id
-   EMAIL_JS_PUBLIC_KEY=your_public_key
-   ```
-
-3. **Build Settings**:
-
-   - Framework: Next.js
-   - Build Command: `npm run build`
-   - Output Directory: `.next`
-   - Install Command: `npm install`
-
-4. **Custom Domain**:
-   - Add your main domain (e.g., `ahammadabdullah.com`)
-   - Configure DNS records
-
 ## 🚀 V2 (Modern) Deployment
 
 ### Vercel Deployment for V2
