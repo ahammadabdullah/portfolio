@@ -137,6 +137,7 @@ export default function RootLayout({
     >
       <head>
         <meta name="theme-color" content="#050506" />
+        <meta name="google-site-verification" content="R6nM7N8O89hKr_L9aq792odg5hIqB6uMKi_z4C6J1hg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
